@@ -1,4 +1,4 @@
-let numContratoFinanciamento = 2309000016334;
+let numContratoFinanciamento = 2309000016573;
 
 exports.vendaDTO = () => {
   numContratoFinanciamento++;
@@ -7,13 +7,13 @@ exports.vendaDTO = () => {
     idItemComercializacao : 4,
     infoExtraVenda : {
       dataDebito : '23/12/2021',
-      valor: 250.45,
+      valor: 210.00,
       dataPrevisaoLiquidacao: null,
       infoVenda: 'Informações Adicionais da Venda',
       ufVenda: 'RJ',
-      cpfCnpj: '83789728870',
+      cpfCnpj: '79186169874',
       tipoPessoa: 'PF',
-      nome: 'LARA BERNARDES VARELLA',
+      nome: 'UBIRATAN BEZERRA SATTO',
       endereco : {
           logradouro: 'Rua Senador Dantas',
           complemento: null,

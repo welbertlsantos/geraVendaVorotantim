@@ -1,6 +1,6 @@
 const vendaService = require('./services/vendaService');
 const {vendaDTO} = require('./dto/vendaDTO');
-const totalVenda = 5
+const totalVenda = 50
 let qtdVendaRealizada = 0;
 const fs = require('fs');
 
@@ -8,7 +8,6 @@ const processa = async () => {
   try {
     let retorno = [];
       const intervaloVenda = setInterval(async () => {
-        console.log('Iniciando venda.....');
         vendaService.vendaTituloBV(vendaDTO())
         .then((result) => {
           qtdVendaRealizada++;
@@ -17,9 +16,10 @@ const processa = async () => {
           console.log(`Data de Débito.... ${result.data.dataDebito}`);
           console.log(`NumeroContrato.... ${result.data.numContratoFinanciamento}`);
           retorno.push({
-            Titulo: result.data.idTitulo,
+            idTitulo: result.data.idTitulo,
             NumeroContratoFinanciamento: result.data.numContratoFinanciamento,
             dataDebito: result.data.dataDebito,
+            cpfCnpj: result.data.cpfCnpjTitular
           });
           if (qtdVendaRealizada >= totalVenda){
             console.log("Interrompendo a execução...");
