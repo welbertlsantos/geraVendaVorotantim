@@ -1,6 +1,6 @@
 const vendaService = require('./services/vendaService');
 const {vendaDTO} = require('./dto/vendaDTO');
-const totalVenda = 50
+const totalVenda = 2
 let qtdVendaRealizada = 0;
 const fs = require('fs');
 

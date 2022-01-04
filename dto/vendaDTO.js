@@ -1,4 +1,4 @@
-let numContratoFinanciamento = 2309000016573;
+let numContratoFinanciamento = 2309000017626;
 
 exports.vendaDTO = () => {
   numContratoFinanciamento++;
@@ -7,7 +7,7 @@ exports.vendaDTO = () => {
     idItemComercializacao : 4,
     infoExtraVenda : {
       dataDebito : '23/12/2021',
-      valor: 210.00,
+      valor: 230.00,
       dataPrevisaoLiquidacao: null,
       infoVenda: 'Informações Adicionais da Venda',
       ufVenda: 'RJ',
